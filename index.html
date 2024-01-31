@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <meta property="og:title" content="Robot Interaction Behavior Generation based on Social Motion Forecasting for Human-Robot Interaction"/>
+  <meta property="og:url" content="https://evm7.github.io/ECHO/"/>
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <title>Robot Interaction Behavior Generation based on Social Motion Forecasting for Human-Robot Interaction</title>
+  
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+  <link rel="icon" href="static/figures/icon2.png">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+
+<body>
+
+  
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://evm7.github.io">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          More Research
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="https://evm7.github.io/UnsH2R/">
+            ImitationNet
+          </a>
+          <a class="navbar-item" href="https://evm7.github.io/HOI4ABOT_page/">
+            HOI4ABOT
+          </a>
+           <a class="navbar-item" href="https://evm7.github.io/UNIMASKM-page/">
+            UNIMASK-M
+          </a>
+          <a class="navbar-item" href="https://evm7.github.io/icvae-page/">
+            IntentionCVAE
+          </a>
+          <a class="navbar-item" href="https://evm7.github.io/HOIGaze-page/">
+            HOIGaze
+          </a>
+            <a class="navbar-item" href="https://evm7.github.io/2CHTR-page/">
+            2CHTR
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+<section class="publication-header">
+  <div class="hero-body">
+    <div class="container is-max-widescreen">
+      <!-- <div class="columns is-centered"> -->
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Robot Interaction Behavior Generation based on Social Motion Forecasting for Human-Robot Interaction</h1>
+          <div class="is-size-3 publication-authors">
+            ICRA, 2024
+          </div>
+        </div>
+    </div>
+  </div>
+
+</section>
+
+<section class="publication-author-block">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <div class="is-size-5 publication-authors">
+           <span class="author-block"><a href="https://evm7.github.io/" target="_blank">Esteve Valls Mascaro</a>,</span>
+           <span class="author-block"><a href="https://www.tuwien.at/en/etit/ict/asl/team/yashuai-yan" target="_blank">Yashuai Yan</a>,</span>
+            <span class="author-block"><a href="https://www.tuwien.at/etit/ict/asl/team/dongheui-lee" target="_blank">Dongheui Lee</a>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">Technische Universit ̈at Wien (TUWien), German Aerospace Center (DLR)</span> 
+          </div>
+          
+
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <span class="link-block">
+                <a href="https://evm7.github.io/ECHO/" target="_blank"
+                  class="external-link button is-normal is-rounded">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv (not yet)</span>
+                </a>
+              </span>
+
+              
+              <!-- PDF Link. -->
+<!--              <span class="link-block">-->
+<!--                <a href="static/source/ADDHEREPDF.pdf" target="_blank"-->
+<!--                  class="external-link button is-normal is-rounded">-->
+<!--                  <span class="icon">-->
+<!--                    <i class="fas fa-file-pdf"></i>-->
+<!--                  </span>-->
+<!--                  <span>Paper</span>-->
+<!--                </a>-->
+<!--              </span>-->
+<!--                            </span>-->
+              <!-- </span> -->
+              <!-- Colab Link. -->
+<!--              <span class="link-block">-->
+<!--                <a href="ADD HERE THE CODE" target="_blank"-->
+<!--                class="external-link button is-normal is-rounded">-->
+<!--                <span class="icon">-->
+<!--                  <i class="fab fa-github"></i>-->
+<!--                </span>-->
+<!--                <span>Code</span>-->
+<!--              </a>-->
+<!--             </span>-->
+
+<!--              <span class="link-block">-->
+<!--                <a href="ADD HERE REPLICATE IF NEEDED" target="_blank"-->
+<!--                class="external-link button is-normal is-rounded">-->
+<!--                <span class="icon">-->
+<!--                  <i class="fas fa-rocket"></i>-->
+<!--                </span>-->
+<!--                <span>Demo</span>-->
+<!--              </a>-->
+<!--              </span>-->
+              <!-- </span> -->
+              <!-- Colab Link. -->
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 
+<section class="hero is-small">
+  <!~~ <div class="hero-body"> ~~>
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <!~~ <div id="results-carousel" class="carousel results-carousel"> ~~>
+      <div class="container">
+      <div class="item">
+      <div class="column is-centered has-text-centered">
+        <img src="static/figures/teaser.png" alt="UNIMASKM"/>
+      </div>
+
+    </div>
+  </div>
+ <!~~  </div> ~~>
+  </div>
+  </div>
+ <!~~  </div> ~~>
+</section>
+ -->
+
+  <section class="hero is-small">
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <div class="container">
+        <div class="item">
+          <p style="margin-bottom: 30px">
+ 
+        <video poster="" id="tree" autoplay controls muted loop height="100%">
+          <source src="static/figures/videos/overview.mp4"
+          type="video/mp4">
+        </video>
+        </p>
+        </div>
+    </div>
+  </div>
+  </div>
+  </div>
+</section>
+    
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+          Integrating robots into populated environments is a complex challenge that requires an understanding of human social dynamics. In this work, we propose to model social motion forecasting in a shared human-robot representation space, which facilitates us to synthesize robot motions that interact with humans in social scenarios despite not observing any robot in the motion training.  We develop a transformer-based architecture called ECHO, which operates in the aforementioned shared space to predict the future motions of the agents encountered in social scenarios. Contrary to prior works, we reformulate the social motion problem as the refinement of the predicted individual motions based on the surrounding agents, which facilitates the training while allowing for single-motion forecasting when only one human is in the scene. We evaluate our model in multi-person and human-robot motion forecasting tasks and obtain state-of-the-art performance by a large margin while being efficient and performing in real-time. Additionally, our qualitative results showcase the effectiveness of our approach in generating human-robot interaction behaviors that can be controlled via text commands.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+</section>
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+
+      <div class="column is-centered has-text-centered">
+        <img src="static/figures/overview.jpg" alt="Motivation of our model"/>
+      </div>    
+  </div>
+</div>
+</div>
+</section>
+
+
+
+
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+         <h2 class="title is-3">How does it work?</h2> 
+        <div class="content has-text-justified">
+          <p>
+Overview of our ECHO framework. First, we learn how to encode (E) and decode (D) the JVRC-1 robot [1] (in the top left, R1) and the TIAGo++ robot (in the bottom left, R2) to a latent representation shared with a human (H) while preserving its semantics. Then, we take advantage of this shared space in the social motion forecasting task. Our Single Encoder learns the dynamics of single agents given a textual intention and its past observations. Later, we iteratively refine those motions based on the social context of the surrounding agents using the Social Decoder. Our overall framework can decode the robot’s motion in a social environment, closing the gap for natural and accurate Human-Robot Interaction.
+          </p>
+        <div class="columns is-centered has-text-centered">
+            <div class="item">
+          <p style="margin-bottom: 30px">
+<!--
+        <video poster="" id="tree" autoplay controls muted loop height="100%">
+          <source src="static/figures/MDM-page.mp4"
+          type="video/mp4">
+        </video>
+ --><br><br>
+        </p>
+        </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+</section>
+
+    
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+
+      <div class="column is-centered has-text-centered">
+        <img src="static/figures/modeloverview.png" alt="Architecture of our ECHO model"/>
+      </div>    
+  </div>
+</div>
+</div>
+</section>
+
+
+      <section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Social Human Motion Motion Forecasting</h2>
+          <p>
+
+            Our model is tested in the InterGen dataset for dyadic motion forecasting in social settings and outperforms on average all state-of-the-art models in multi-person motion forecasting. InterGen is the largest dataset of social motions and contains both daily (e.g. handover, greeting, communications) and more professional (e.g. dancing, boxing) human-human interactions with text descriptions.           </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+</section> 
+
+    
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container">
+        <div id="results-carousel" class="carousel results-carousel">
+          
+	       <div class="column is-centered has-text-centered">
+		  <p><b> “One person seizes the other's right hand utilizing his left hand. The other revolves once to the left, at the same time waves her left hand.”</b></p>
+		      <div class="image-container" style="height: 500px; overflow: hidden; justify-content: center; align-items: center;">
+		        <img src="static/figures/videos/hhi/image3.gif" alt="image3.gif" style="width: 750px; height: 750px; position: relative; top: -150px;">
+		      </div>
+	       </div>
+	             
+	       <div class="column is-centered has-text-centered">
+		  <p><b> “These two stroll closely while performing alternating arm swings in sync, then proceed to complete a half-circle around the field.”</b></p>
+		      <div class="image-container" style="height: 500px; overflow: hidden; justify-content: center; align-items: center;">
+		        <img src="static/figures/videos/hhi/image6.gif" alt="image6.gif" style="width: 750px; height: 750px; position: relative; top: -150px;">
+		      </div>
+	       </div>
+
+	       <div class="column is-centered has-text-centered">
+		  <p><b> “The first person approaches the other and pushes them with their left hand.”</b></p>
+		      <div class="image-container" style="height: 500px; overflow: hidden; justify-content: center; align-items: center;">
+		        <img src="static/figures/videos/hhi/image7.gif" alt="image7.gif" style="width: 750px; height: 750px; position: relative; top: -150px;">
+		      </div>
+	       </div>
+	       
+		<div class="column is-centered has-text-centered">
+		  <p><b> “These two move in a rhythmic manner, then one lifts a leg to attack the other, and the other person jumps upwards and responds with a swift move.”</b></p>
+		      <div class="image-container" style="height: 500px; overflow: hidden; justify-content: center; align-items: center;">
+		        <img src="static/figures/videos/hhi/image8.gif" alt="image8.gif" style="width: 750px; height: 750px; position: relative; top: -150px;">
+		      </div>
+	       </div>
+	       
+		<div class="column is-centered has-text-centered">
+		  <p><b> “The two individuals approach each other, engage in a tai chi combat, and then retreat from each other simultaneously.”</b></p>
+		      <div class="image-container" style="height: 500px; overflow: hidden; justify-content: center; align-items: center;">
+		        <img src="static/figures/videos/hhi/image9.gif" alt="image9.gif" style="width: 750px; height: 750px; position: relative; top: -150px;">
+		      </div>
+	       </div>
+	       
+		<div class="column is-centered has-text-centered">
+		  <p><b> “The first person takes a step back with the right foot while the second takes a step forward with the left foot. ”</b></p>
+		      <div class="image-container" style="height: 500px; overflow: hidden; justify-content: center; align-items: center;">
+		        <img src="static/figures/videos/hhi/image12.gif" alt="image12.gif" style="width: 750px; height: 750px; position: relative; top: -150px;">
+		      </div>
+	       </div>
+	       
+		<div class="column is-centered has-text-centered">
+		  <p><b> “One of the persons takes steps together with the other person, their feet are tied halfway. ”</b></p>
+		      <div class="image-container" style="height: 500px; overflow: hidden; justify-content: center; align-items: center;">
+		        <img src="static/figures/videos/hhi/image13.gif" alt="image13.gif" style="width: 750px; height: 750px; position: relative; top: -150px;">
+		      </div>
+	       </div>
+	       
+		<div class="column is-centered has-text-centered">
+		  <p><b> “Two people stand side by side, making a heart shape with their hands. ”</b></p>
+		      <div class="image-container" style="height: 500px; overflow: hidden; justify-content: center; align-items: center;">
+		        <img src="static/figures/videos/hhi/image14.gif" alt="image14.gif" style="width: 750px; height: 750px; position: relative; top: -150px;">
+		      </div>
+	       </div>
+	       
+		<div class="column is-centered has-text-centered">
+		  <p><b> “One person leads the other in a dance by pulling the latter's right hand with the former's left hand. One person then circles around the head of the other to stand behind them. (part1)”</b></p>
+		      <div class="image-container" style="height: 500px; overflow: hidden; justify-content: center; align-items: center;">
+		        <img src="static/figures/videos/hhi/image14.gif" alt="image14.gif" style="width: 750px; height: 750px; position: relative; top: -150px;">
+		      </div>
+	       </div>
+	       
+		<div class="column is-centered has-text-centered">
+		  <p><b> “One person leads the other in a dance by pulling the latter's right hand with the former's left hand. One person then circles around the head of the other to stand behind them. (part2)”</b></p>
+		      <div class="image-container" style="height: 500px; overflow: hidden; justify-content: center; align-items: center;">
+		        <img src="static/figures/videos/hhi/image16.gif" alt="image16.gif" style="width: 750px; height: 750px; position: relative; top: -150px;">
+		      </div>
+	       </div>
+	       
+		<div class="column is-centered has-text-centered">
+		  <p><b> “One person excitedly drags the other person sitting in the chair to go play, while the other person reluctantly follows along.”</b></p>
+		      <div class="image-container" style="height: 500px; overflow: hidden; justify-content: center; align-items: center;">
+		        <img src="static/figures/videos/hhi/image17.gif" alt="image17.gif" style="width: 750px; height: 750px; position: relative; top: -150px;">
+		      </div>
+	       </div>
+	       
+		<div class="column is-centered has-text-centered">
+		  <p><b> “Two individuals stand facing each other, take a step forward, and shake each other's right hand. ”</b></p>
+		      <div class="image-container" style="height: 500px; overflow: hidden; justify-content: center; align-items: center;">
+		        <img src="static/figures/videos/hhi/image19.gif" alt="image19.gif" style="width: 750px; height: 750px; position: relative; top: -150px;">
+		      </div>
+	       </div>
+	       
+	       
+       	<div class="column is-centered has-text-centered">
+		  <p><b> “TOne tosses a stuffed disney character over to the other.”</b></p>
+		      <div class="image-container" style="height: 500px; overflow: hidden; justify-content: center; align-items: center;">
+		        <img src="static/figures/videos/hhi/image20.gif" alt="image20.gif" style="width: 750px; height: 750px; position: relative; top: -150px;">
+		      </div>
+	       </div>
+	       
+	       
+       	<div class="column is-centered has-text-centered">
+		  <p><b> “The second person takes a small step forward towards the second with the left leg, lifts the left foot and puts the right leg forward and then puts it down.”</b></p>
+		      <div class="image-container" style="height: 500px; overflow: hidden; justify-content: center; align-items: center;">
+		        <img src="static/figures/videos/hhi/image21.gif" alt="image21.gif" style="width: 750px; height: 750px; position: relative; top: -150px;">
+		      </div>
+	       </div>
+	       
+	       	       
+       	<div class="column is-centered has-text-centered">
+		  <p><b> “One lets go of their right hand, the other lets go of their left hand, and they both swing their arms in circular motions.”</b></p>
+		      <div class="image-container" style="height: 500px; overflow: hidden; justify-content: center; align-items: center;">
+		        <img src="static/figures/videos/hhi/image22.gif" alt="image22.gif" style="width: 750px; height: 750px; position: relative; top: -150px;">
+		      </div>
+	       </div>
+	</div>
+      </div>
+    </div>
+  </section>
+
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Social motion forecasting for Human-Robot Interaction</h2>
+          <p>
+		We make use of ImitationNet to translate human and robot poses into a shared latent space, and then learn through our ECHO model how to properly generate social interactions from human data. The results show out method is able to generate accurate robotic motions that resemble human's behavior, while never accessing to annotated robot data. Here, Human-Human pair represents the ground truth, while the human-robot pair represents the forecasted human-robot interaction. The following videos show the results in the TIAGo++ and the JVRC-1 humanoid robots.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+</section> 
+
+    <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container">
+        <div id="results-carousel" class="carousel results-carousel">
+          	
+  	      	<div class="column is-centered has-text-centered">
+		  <p><b> “The first person approaches the other and pushes them with their left hand.”</b></p>
+		      <div class="image-container" style="height: 500px; overflow: hidden; justify-content: center; align-items: center;">
+		        <img src="static/figures/videos/hri/image25.gif" alt="image25.gif" style="width: 600px; height: 400px; position: relative; top: -00px;">
+		      </div>
+	       </div>
+	       
+      		<div class="column is-centered has-text-centered">
+		  <p><b> “Two individuals raise their hands, touch their left hands, and make a small half circle counterclockwise.”</b></p>
+		      <div class="image-container" style="height: 500px; overflow: hidden; justify-content: center; align-items: center;">
+		        <img src="static/figures/videos/hri/image31.gif" alt="image31.gif" style="width: 600px; height: 400px; position: relative; top: -00px;">
+		      </div>
+	       </div>
+	       
+	       
+	     	<div class="column is-centered has-text-centered">
+		  <p><b> “One person excitedly drags the other person sitting in the chair to go play, while the other person reluctantly follows along.”</b></p>
+		      <div class="image-container" style="height: 500px; overflow: hidden; justify-content: center; align-items: center;">
+			<img src="static/figures/videos/hri/image26.gif" alt="image26.gif" style="width: 600px; height: 400px; position: relative; top: -00px;">
+		      </div>
+	       </div>
+	       
+	     	<div class="column is-centered has-text-centered">
+		  <p><b> “The first person takes a step back with the right foot while the second takes a step forward with the left foot.”</b></p>
+		      <div class="image-container" style="height: 500px; overflow: hidden; justify-content: center; align-items: center;">
+			<img src="static/figures/videos/hri/image23.gif" alt="image23.gif" style="width: 600px; height: 400px; position: relative; top: -00px;">
+		      </div>
+	       </div>
+	       	
+	      	<div class="column is-centered has-text-centered">
+		  <p><b> “One person excitedly drags the other person sitting in the chair to go play, while the other person reluctantly follows along.”</b></p>
+		      <div class="image-container" style="height: 500px; overflow: hidden; justify-content: center; align-items: center;">
+		        <img src="static/figures/videos/hri/image28.gif" alt="simage28.gif" style="width: 600px; height: 400px; position: relative; top: -00px;">
+		      </div>
+	       </div>
+	       
+      		<div class="column is-centered has-text-centered">
+		  <p><b> “These two stroll closely while performing alternating arm swings in sync, then proceed to complete a half-circle around the field.”</b></p>
+		      <div class="image-container" style="height: 500px; overflow: hidden; justify-content: center; align-items: center;">
+		        <img src="static/figures/videos/hri/image29.gif" alt="image29.gif" style="width: 600px; height: 400px; position: relative; top: -00px;">
+		      </div>
+	       </div>
+	       
+	       
+	     	<div class="column is-centered has-text-centered">
+		  <p><b> “Two individuals raise their hands, touch their left hands, and make a small half circle counterclockwise.”</b></p>
+		      <div class="image-container" style="height: 500px; overflow: hidden; justify-content: center; align-items: center;">
+			<img src="static/figures/videos/hri/image27.gif" alt="image27.gif" style="width: 600px; height: 400px; position: relative; top: -00px;">
+		      </div>
+	       </div>
+	       
+	     	<div class="column is-centered has-text-centered">
+		  <p><b> “One of the persons takes steps together with the other person, their feet are tied halfway.”</b></p>
+		      <div class="image-container" style="height: 500px; overflow: hidden; justify-content: center; align-items: center;">
+			<img src="static/figures/videos/hri/image30.gif" alt="image30.gif" style="width: 600px; height: 400px; position: relative; top: -00px;">
+		      </div>
+	       </div>
+	       
+
+	       
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+    
+<section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>
+@article{valls2024echo,
+  title={Robot Interaction Behavior Generation based on Social Motion Forecasting for Human-Robot Interaction},
+  author={Valls Mascaro, Esteve and Yan, Yashuai and Lee, Dongheui},
+  journal={2024 IEEE International Conference on Robotics and Automation (ICRA},
+  year={2024}
+}</code></pre>
+    </div>
+</section>
+
+
+
+
+<footer class="footer">
+ <!--  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+      href="https://homes.cs.washington.edu/~kpar/nerfies/videos/nerfies_paper.pdf">
+      <i class="fas fa-file-pdf"></i>
+    </a>
+    <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
+      <i class="fab fa-github"></i>
+    </a>
+  </div> -->
+  <div class="columns is-centered">
+    <div class="column is-8">
+      <div class="content">
+        <p>
+          This website is licensed under a <a rel="license"
+          href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+        Commons Attribution-ShareAlike 4.0 International License</a>.
+      </p>
+      <p>
+        Website source code based on the <a href="https://nerfies.github.io/"> Nerfies</a> project page. If you want to reuse their <a
+        href="https://github.com/nerfies/nerfies.github.io">source code</a>, please credit them appropriately.
+      </p>
+    </div>
+  </div>
+</div>
+</div>
+</footer>
+
+  </body>
+  </html>
